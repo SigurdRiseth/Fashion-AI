@@ -53,3 +53,7 @@ class OptimizerSGD:
             # vanilla or momentum updates
             layer.weights += weight_updates
             layer.biases += bias_updates
+
+    # Call once after any parameter updates
+    def post_update_params(self):
+        self.iterations += 1
