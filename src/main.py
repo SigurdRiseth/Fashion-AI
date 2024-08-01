@@ -1,6 +1,7 @@
 from src.activation_functions.activation_relu import ActivationReLU
+from src.activation_functions.activation_softmax import ActivationSoftmax
 from src.layers.layer_dense import LayerDense
-from src.model import Model
+from src.model.model import Model
 
 # Instantiate the model
 model = Model()
