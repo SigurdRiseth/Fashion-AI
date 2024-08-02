@@ -42,18 +42,20 @@ For more information, visit the [Fashion MNIST GitHub repository](https://github
 
 The neural network implemented in this project consists of the following layers:
 
-1. Input Layer: 28x28 neurons, one for each pixel in the image.
-2. Hidden Layers:
-3. Output Layer: Dense layer with 10 neurons, softmax activation.
+1. **Input Layer:** 784 (28x28) neurons, one for each pixel in the image.
+2. **Hidden Layers:**
+   1. First hidden layer: Dense layer with 128 neurons, ReLU activation. 
+   2. Second hidden layer: Dense layer with 64 neurons, ReLU activation.
+3. **Output Layer:** Dense layer with 10 neurons, softmax activation.
 
 The model uses categorical cross-entropy as the loss function and the Adam optimizer for training.
-
 
 ## Installation
 
 To run the code, ensure you have Python 3.7 or higher installed, along with the necessary libraries:
 
 ```Python
+pip install -r requirements.txt
 ```
 
 requirements.txt should include:
@@ -105,4 +107,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgements
 
 * The book *Neural Networks from Scratch in Python* by Harrison Kinsley & Daniel Kukieła
-* The Fashion MNIST dataset was created by Zalando Research.
+* The Fashion MNIST dataset created by Zalando Research.
