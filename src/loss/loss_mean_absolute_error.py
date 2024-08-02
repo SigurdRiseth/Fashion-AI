@@ -23,3 +23,4 @@ class LossMeanAbsoluteError(Loss): # L1 loss
         self.dinputs = np.sign(y_true - dvalues) / outputs
         # Normalize gradient
         self.dinputs = self.dinputs / samples
+        
