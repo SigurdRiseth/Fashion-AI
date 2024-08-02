@@ -45,7 +45,7 @@ The neural network implemented in this project consists of the following layers:
 1. **Input Layer:** 784 (28x28) neurons, one for each pixel in the image.
 2. **Hidden Layers:**
    1. First hidden layer: Dense layer with 128 neurons, ReLU activation. 
-   2. Second hidden layer: Dense layer with 64 neurons, ReLU activation.
+   2. Second hidden layer: Dense layer with 128 neurons, ReLU activation.
 3. **Output Layer:** Dense layer with 10 neurons, softmax activation.
 
 The model uses categorical cross-entropy as the loss function and the Adam optimizer for training.
@@ -98,7 +98,7 @@ visualize.py
 
 ## Results
 
-The model achieves an accuracy of approximately XX% on the test set. Below is a confusion matrix of the model's performance:
+The model achieves an accuracy of approximately 87.4% on the test set. Below is a confusion matrix of the model's performance:
 
 ## License
 
